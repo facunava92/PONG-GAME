@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Nov 21 16:48:02 2016
+# Process ID: 9976
+# Log file: C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pa.fromNetlist.tcl
+set_property package_pin "" [get_ports [list  {an[3]}]]
+set_property package_pin "" [get_ports [list  {an[0]}]]
+startgroup
+set_property package_pin P34 [get_ports {an[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {an[1]}]]
+startgroup
+set_property package_pin P26 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports {an[0]}]
+endgroup
+save_constraints

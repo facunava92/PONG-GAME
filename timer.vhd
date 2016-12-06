@@ -1,0 +1,40 @@
+----------------------------------------------------------------------------------
+-- Module Name:    timer - arch 
+----------------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity timer is
+   port(
+      clk, reset: in std_logic;
+      timer_start, timer_tick: in std_logic;
+      timer_up: out std_logic
+   );
+end timer;
+
+architecture arch of timer is
+   signal timer_reg, timer_next: unsigned(7 downto 0);		-- se toma 2 segundos, es decir dos refrescos de pantalla, 72 Hz, son 72 veces x segundo, en resumen son 144 veces
+begin
+   -- registers
+ process (clk, reset)
+ begin
+	if reset='1' then
+		timer_reg <= (others=>'1');
+   elsif (clk'event and clk='1') then
+		timer_reg <= timer_next;
+   end if;
+end process;
+
+process(timer_start,timer_reg,timer_tick)
+   begin
+      if (timer_start='1') then
+         timer_next <= "10010000";
+      elsif timer_tick='1' and timer_reg/=0 then
+         timer_next <= timer_reg - 1;
+      else
+         timer_next <= timer_reg;
+      end if;
+   end process;
+   timer_up <='1' when timer_reg=0 else '0';
+end arch;

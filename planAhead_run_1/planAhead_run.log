@@ -1,0 +1,118 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pa.fromNetlist.tcl
+# create_project -name Pong_FSM -dir "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/planAhead_run_2" -part xc3s100etq144-5
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM} }
+# set_property target_constrs_file "pong_top.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.ucf' to fileset 'constrs_1'
+# add_files [list {pong_top.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s100etq144-5
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design pong_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to pong_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   pong_graph_unit/Mcompar_hit_cmp_le0000_lut<7 : 1> on block pong_top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   pong_graph_unit/Mcompar_miss_cmp_gt0000_lut<6 : 0> on block pong_top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   pong_graph_unit/Mcompar_miss_cmp_le0002_lut<5 : 0> on block pong_top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   pong_graph_unit/Mcompar_paddle_x_reg_cmp_le0000_lut<3 : 0> on block pong_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   pong_graph_unit/Mcompar_wall_on_cmp_le0000_lut<5 : 0> on block pong_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   pong_graph_unit/Mcompar_wall_on_cmp_le0001_lut<7 : 1> on block pong_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus pong_graph_unit/Msub_ball_x_r_lut<10 :
+   1> on block pong_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus pong_graph_unit/Msub_ball_y_b_lut<10 :
+   1> on block pong_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus pong_graph_unit/Msub_paddle_x_r_b_lut<10
+   : 1> on block pong_top is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus pong_graph_unit/delta_x_reg_mux0000<8 :
+   0> on block pong_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus pong_graph_unit/delta_y_reg_mux0000<8 :
+   0> on block pong_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus sound_unit/data<8 : 0> on block pong_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus sound_unit/note<8 : 0> on block pong_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   vga_driver_unit/Mcompar_v_sync_next_cmp_le0000_lut<7 : 0> on block pong_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   vga_driver_unit/Mcompar_video_on_cmp_lt0001_lut<6 : 1> on block pong_top is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file pong_top.edif ...
+ngc2edif: Total memory usage is 85988 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/Pong_FSM.data/cache/pong_top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/Pong_FSM.data/cache/pong_top_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'pong_top' is not ideal for floorplanning, since the cellview 'pong_top' defined in file 'pong_top.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/tq144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/tq144/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.ucf]
+Finished Parsing UCF File [C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: afd2f989
+link_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 615.938 ; gain = 150.152
+set_property package_pin "" [get_ports [list  {an[3]}]]
+set_property package_pin "" [get_ports [list  {an[0]}]]
+startgroup
+set_property package_pin P34 [get_ports {an[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {an[1]}]]
+startgroup
+set_property package_pin P26 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports {an[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Nov 21 16:49:16 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

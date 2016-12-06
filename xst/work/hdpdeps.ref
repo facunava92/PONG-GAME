@@ -1,0 +1,89 @@
+V3 42
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/char_ROM.vhd 2016/10/10.20:19:24 P.20131013
+EN work/char_ROM 1479758106 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/char_ROM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/char_ROM/arch 1479758107 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/char_ROM.vhd \
+      EN work/char_ROM 1479758106
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/hit_sound.vhd 2016/10/20.12:15:11 P.20131013
+EN work/hit_sound 1479758100 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/hit_sound.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/hit_sound/content 1479758101 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/hit_sound.vhd \
+      EN work/hit_sound 1479758100
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/m1000_counter.vhd 2016/10/20.18:37:02 P.20131013
+EN work/m1000_counter 1479758116 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/m1000_counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/m1000_counter/arch 1479758117 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/m1000_counter.vhd \
+      EN work/m1000_counter 1479758116
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/miss_sound.vhd 2016/10/20.12:16:51 P.20131013
+EN work/miss_sound 1479758102 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/miss_sound.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/miss_sound/content 1479758103 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/miss_sound.vhd \
+      EN work/miss_sound 1479758102
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_graph.vhd 2016/10/24.17:00:12 P.20131013
+EN work/pong_graph 1479758110 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_graph.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/pong_graph/arch 1479758111 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_graph.vhd \
+      EN work/pong_graph 1479758110
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_text.vhd 2016/11/10.16:47:56 P.20131013
+EN work/pong_text 1479758112 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_text.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/pong_text/arch 1479758113 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_text.vhd \
+      EN work/pong_text 1479758112 CP work/char_ROM
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.vhd 2016/10/20.22:00:20 P.20131013
+EN work/pong_top 1479758122 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/pong_top/pong_top_arch 1479758123 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.vhd \
+      EN work/pong_top 1479758122 CP work/vga_driver AR work/pong_graph/arch 1479758111 \
+      CP work/pong_text CP work/timer CP work/m1000_counter CP work/sseg_mux \
+      AR work/sound_play/arch 1479758121
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_gen.vhd 2016/10/20.12:20:30 P.20131013
+EN work/sound_gen 1479758104 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_gen.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sound_gen/generator 1479758105 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_gen.vhd \
+      EN work/sound_gen 1479758104
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_play.vhd 2016/10/20.12:22:34 P.20131013
+EN work/sound_play 1479758120 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_play.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sound_play/arch 1479758121 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_play.vhd \
+      EN work/sound_play 1479758120 AR work/hit_sound/content 1479758101 \
+      AR work/miss_sound/content 1479758103 AR work/sound_gen/generator 1479758105
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sseg_mux.vhd 2016/11/05.15:09:16 P.20131013
+EN work/sseg_mux 1479758118 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sseg_mux.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/sseg_mux/arch 1479758119 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sseg_mux.vhd \
+      EN work/sseg_mux 1479758118
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/timer.vhd 2016/10/14.16:04:28 P.20131013
+EN work/timer 1479758114 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/timer.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/timer/arch 1479758115 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/timer.vhd \
+      EN work/timer 1479758114
+FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/vga_driver.vhd 2016/10/22.09:28:39 P.20131013
+EN work/vga_driver 1479758108 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/vga_driver.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/vga_driver/sync 1479758109 \
+      FL C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/vga_driver.vhd \
+      EN work/vga_driver 1479758108

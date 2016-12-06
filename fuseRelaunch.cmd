@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top_isim_beh.exe" -prj "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top_beh.prj" "work.pong_top" 

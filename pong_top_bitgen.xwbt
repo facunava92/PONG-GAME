@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\facun\OneDrive\Proyecyo_Tecnicas\Xiling\Pong_FSM\Pong_FSM\pong_top.ncd
+OUTFILE=C:\Users\facun\OneDrive\Proyecyo_Tecnicas\Xiling\Pong_FSM\Pong_FSM\pong_top.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5tq144
+WORKINGDIR=C:\Users\facun\OneDrive\Proyecyo_Tecnicas\Xiling\Pong_FSM\Pong_FSM
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,34 @@
+
+
+NET "blue[1]" LOC = P44;
+NET "blue[0]" LOC = P43;
+NET "btn[1]" LOC = P69;
+NET "btn[0]" LOC = P48;
+NET "green[2]" LOC = P52;
+NET "green[1]" LOC = P51;
+NET "green[0]" LOC = P50;
+NET "red[2]" LOC = P70;
+NET "red[1]" LOC = P68;
+NET "red[0]" LOC = P67;
+NET "clk" LOC = P54;
+NET "hsync" LOC = P39;
+NET "reset" LOC = P41;
+NET "vsync" LOC = P35;
+
+
+NET "sseg[6]" LOC = P83;
+NET "sseg[5]" LOC = P17;
+NET "sseg[4]" LOC = P20;
+NET "sseg[3]" LOC = P21;
+NET "sseg[2]" LOC = P23;
+NET "sseg[1]" LOC = P16;
+NET "sseg[0]" LOC = P25;
+
+
+NET "buzzer" LOC = P81;
+
+# PlanAhead Generated physical constraints 
+NET "an[3]" LOC = P26;
+NET "an[2]" LOC = P32;
+NET "an[1]" LOC = P33;
+NET "an[0]" LOC = P34;

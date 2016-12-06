@@ -1,0 +1,867 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: pong_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pong_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pong_top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : pong_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/hit_sound.vhd" in Library work.
+Architecture content of Entity hit_sound is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/miss_sound.vhd" in Library work.
+Architecture content of Entity miss_sound is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_gen.vhd" in Library work.
+Architecture generator of Entity sound_gen is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/char_ROM.vhd" in Library work.
+Architecture arch of Entity char_rom is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/vga_driver.vhd" in Library work.
+Architecture sync of Entity vga_driver is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_graph.vhd" in Library work.
+Architecture arch of Entity pong_graph is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_text.vhd" in Library work.
+Architecture arch of Entity pong_text is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/timer.vhd" in Library work.
+Architecture arch of Entity timer is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/m1000_counter.vhd" in Library work.
+Architecture arch of Entity m1000_counter is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sseg_mux.vhd" in Library work.
+Architecture arch of Entity sseg_mux is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_play.vhd" in Library work.
+Architecture arch of Entity sound_play is up to date.
+Compiling vhdl file "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.vhd" in Library work.
+Architecture pong_top_arch of Entity pong_top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <pong_top> in library <work> (architecture <pong_top_arch>).
+
+Analyzing hierarchy for entity <vga_driver> in library <work> (architecture <sync>).
+
+Analyzing hierarchy for entity <pong_graph> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <pong_text> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <timer> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <m1000_counter> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <sseg_mux> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <sound_play> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <char_ROM> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <hit_sound> in library <work> (architecture <content>) with generics.
+	ADDR_WIDTH = 2
+
+Analyzing hierarchy for entity <miss_sound> in library <work> (architecture <content>) with generics.
+	ADDR_WIDTH = 2
+
+Analyzing hierarchy for entity <sound_gen> in library <work> (architecture <generator>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <pong_top> in library <work> (Architecture <pong_top_arch>).
+Entity <pong_top> analyzed. Unit <pong_top> generated.
+
+Analyzing Entity <vga_driver> in library <work> (Architecture <sync>).
+Entity <vga_driver> analyzed. Unit <vga_driver> generated.
+
+Analyzing Entity <pong_graph> in library <work> (Architecture <arch>).
+Entity <pong_graph> analyzed. Unit <pong_graph> generated.
+
+Analyzing Entity <pong_text> in library <work> (Architecture <arch>).
+Entity <pong_text> analyzed. Unit <pong_text> generated.
+
+Analyzing Entity <char_ROM> in library <work> (Architecture <arch>).
+Entity <char_ROM> analyzed. Unit <char_ROM> generated.
+
+Analyzing Entity <timer> in library <work> (Architecture <arch>).
+Entity <timer> analyzed. Unit <timer> generated.
+
+Analyzing Entity <m1000_counter> in library <work> (Architecture <arch>).
+Entity <m1000_counter> analyzed. Unit <m1000_counter> generated.
+
+Analyzing Entity <sseg_mux> in library <work> (Architecture <arch>).
+Entity <sseg_mux> analyzed. Unit <sseg_mux> generated.
+
+Analyzing Entity <sound_play> in library <work> (Architecture <arch>).
+Entity <sound_play> analyzed. Unit <sound_play> generated.
+
+Analyzing generic Entity <hit_sound> in library <work> (Architecture <content>).
+	ADDR_WIDTH = 2
+Entity <hit_sound> analyzed. Unit <hit_sound> generated.
+
+Analyzing generic Entity <miss_sound> in library <work> (Architecture <content>).
+	ADDR_WIDTH = 2
+Entity <miss_sound> analyzed. Unit <miss_sound> generated.
+
+Analyzing Entity <sound_gen> in library <work> (Architecture <generator>).
+WARNING:Xst:790 - "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_gen.vhd" line 35: Index value(s) does not match array range, simulation mismatch.
+Entity <sound_gen> analyzed. Unit <sound_gen> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_driver>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/vga_driver.vhd".
+    Found 11-bit up counter for signal <h_count_reg>.
+    Found 11-bit comparator greatequal for signal <h_sync_next$cmp_ge0000> created at line 116.
+    Found 11-bit comparator lessequal for signal <h_sync_next$cmp_le0000> created at line 116.
+    Found 1-bit register for signal <h_sync_reg>.
+    Found 1-bit register for signal <mod1_reg>.
+    Found 11-bit up counter for signal <v_count_reg>.
+    Found 11-bit comparator greatequal for signal <v_sync_next$cmp_ge0000> created at line 120.
+    Found 11-bit comparator lessequal for signal <v_sync_next$cmp_le0000> created at line 120.
+    Found 1-bit register for signal <v_sync_reg>.
+    Found 11-bit comparator less for signal <video_on$cmp_lt0000> created at line 127.
+    Found 11-bit comparator less for signal <video_on$cmp_lt0001> created at line 127.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_driver> synthesized.
+
+
+Synthesizing Unit <pong_graph>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_graph.vhd".
+    Found 16x16-bit ROM for signal <rom_data$rom0000> created at line 248.
+    Found 11-bit subtractor for signal <ball_x_r>.
+    Found 11-bit adder for signal <ball_x_r$addsub0000> created at line 234.
+    Found 11-bit register for signal <ball_x_reg>.
+    Found 11-bit adder for signal <ball_x_reg$addsub0000> created at line 259.
+    Found 11-bit subtractor for signal <ball_y_b>.
+    Found 11-bit adder for signal <ball_y_b$addsub0000> created at line 235.
+    Found 11-bit register for signal <ball_y_reg>.
+    Found 11-bit adder for signal <ball_y_reg$addsub0000> created at line 263.
+    Found 11-bit register for signal <delta_x_reg>.
+    Found 11-bit comparator greater for signal <delta_x_reg$cmp_gt0000> created at line 286.
+    Found 11-bit comparator less for signal <delta_x_reg$cmp_gt0001> created at line 284.
+    Found 11-bit register for signal <delta_y_reg>.
+    Found 11-bit comparator less for signal <delta_y_reg$cmp_gt0000> created at line 290.
+    Found 11-bit comparator greater for signal <delta_y_reg$cmp_gt0001> created at line 290.
+    Found 11-bit comparator greater for signal <delta_y_reg$cmp_gt0002> created at line 288.
+    Found 11-bit comparator greater for signal <delta_y_reg$cmp_gt0003> created at line 288.
+    Found 11-bit comparator greatequal for signal <hit$cmp_le0000> created at line 290.
+    Found 11-bit comparator lessequal for signal <hit$cmp_le0001> created at line 290.
+    Found 11-bit comparator greater for signal <miss$cmp_gt0000> created at line 293.
+    Found 11-bit comparator lessequal for signal <miss$cmp_le0000> created at line 282.
+    Found 11-bit comparator greatequal for signal <miss$cmp_le0001> created at line 284.
+    Found 11-bit comparator lessequal for signal <miss$cmp_le0002> created at line 286.
+    Found 11-bit comparator lessequal for signal <miss$cmp_le0003> created at line 288.
+    Found 11-bit comparator lessequal for signal <miss$cmp_le0004> created at line 288.
+    Found 11-bit comparator lessequal for signal <paddle_on$cmp_le0000> created at line 206.
+    Found 11-bit comparator lessequal for signal <paddle_on$cmp_le0001> created at line 206.
+    Found 11-bit comparator greatequal for signal <paddle_on$cmp_le0002> created at line 206.
+    Found 11-bit subtractor for signal <paddle_x_r_b>.
+    Found 11-bit adder for signal <paddle_x_r_b$addsub0000> created at line 203.
+    Found 11-bit register for signal <paddle_x_reg>.
+    Found 11-bit addsub for signal <paddle_x_reg$addsub0000>.
+    Found 11-bit comparator greatequal for signal <paddle_x_reg$cmp_ge0000> created at line 220.
+    Found 11-bit comparator lessequal for signal <paddle_x_reg$cmp_le0000> created at line 221.
+    Found 11-bit comparator less for signal <paddle_x_reg$cmp_lt0000> created at line 220.
+    Found 4-bit subtractor for signal <rom_addr>.
+    Found 1-bit 16-to-1 multiplexer for signal <rom_bit>.
+    Found 4-bit subtractor for signal <rom_col>.
+    Found 11-bit comparator lessequal for signal <sq_ball_on$cmp_le0000> created at line 239.
+    Found 11-bit comparator lessequal for signal <sq_ball_on$cmp_le0001> created at line 239.
+    Found 11-bit comparator lessequal for signal <sq_ball_on$cmp_le0002> created at line 239.
+    Found 11-bit comparator lessequal for signal <sq_ball_on$cmp_le0003> created at line 239.
+    Found 11-bit comparator lessequal for signal <wall_on$cmp_le0000> created at line 191.
+    Found 11-bit comparator greatequal for signal <wall_on$cmp_le0001> created at line 191.
+    Found 11-bit comparator greatequal for signal <wall_on$cmp_le0002> created at line 191.
+    Found 11-bit comparator lessequal for signal <wall_on$cmp_le0003> created at line 191.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  33 D-type flip-flop(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred  28 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <pong_graph> synthesized.
+
+
+Synthesizing Unit <timer>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/timer.vhd".
+    Found 8-bit down counter for signal <timer_reg>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <timer> synthesized.
+
+
+Synthesizing Unit <m1000_counter>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/m1000_counter.vhd".
+    Found 4-bit register for signal <dig0_reg>.
+    Found 4-bit adder for signal <dig0_reg$addsub0000> created at line 62.
+    Found 4-bit register for signal <dig1_reg>.
+    Found 4-bit adder for signal <dig1_reg$addsub0000> created at line 59.
+    Found 4-bit register for signal <dig2_reg>.
+    Found 4-bit adder for signal <dig2_reg$addsub0000> created at line 56.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <m1000_counter> synthesized.
+
+
+Synthesizing Unit <sseg_mux>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sseg_mux.vhd".
+    Found 16x7-bit ROM for signal <sseg2_next>.
+    Found 4x4-bit ROM for signal <an>.
+    Found 16x7-bit ROM for signal <sseg0_next>.
+    Found 16x7-bit ROM for signal <sseg1_next>.
+    Found 7-bit 4-to-1 multiplexer for signal <sseg>.
+    Found 18-bit up counter for signal <q_reg>.
+    Found 7-bit register for signal <sseg0_reg>.
+    Found 7-bit register for signal <sseg1_reg>.
+    Found 7-bit register for signal <sseg2_reg>.
+    Summary:
+	inferred   4 ROM(s).
+	inferred   1 Counter(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+Unit <sseg_mux> synthesized.
+
+
+Synthesizing Unit <char_ROM>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/char_ROM.vhd".
+    Found 2048x8-bit ROM for signal <data$rom0000> created at line 2214.
+    Found 11-bit register for signal <addr_reg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  11 D-type flip-flop(s).
+Unit <char_ROM> synthesized.
+
+
+Synthesizing Unit <hit_sound>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/hit_sound.vhd".
+    Found 4x9-bit ROM for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hit_sound> synthesized.
+
+
+Synthesizing Unit <miss_sound>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/miss_sound.vhd".
+    Found 4x9-bit ROM for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <miss_sound> synthesized.
+
+
+Synthesizing Unit <sound_gen>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_gen.vhd".
+    Found 19-bit comparator less for signal <buzzer$cmp_lt0000> created at line 39.
+    Found 19-bit register for signal <counter>.
+    Found 19-bit adder for signal <counter_next$addsub0000> created at line 37.
+    Found 19-bit comparator equal for signal <counter_next$cmp_eq0000> created at line 37.
+    Found 19-bit shifter logical right for signal <pulse_width>.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <sound_gen> synthesized.
+
+
+Synthesizing Unit <pong_text>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_text.vhd".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 128x7-bit ROM for signal <char_addr_r$rom0000> created at line 284.
+    Found 1-bit 8-to-1 multiplexer for signal <font_bit>.
+    Found 5-bit comparator greatequal for signal <logo_on$cmp_le0000> created at line 253.
+    Found 5-bit comparator lessequal for signal <logo_on$cmp_le0001> created at line 253.
+    Found 6-bit comparator greatequal for signal <over_on$cmp_le0000> created at line 292.
+    Found 6-bit comparator lessequal for signal <over_on$cmp_le0001> created at line 292.
+    Found 7-bit comparator less for signal <score_on$cmp_lt0000> created at line 218.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   5 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <pong_text> synthesized.
+
+
+Synthesizing Unit <sound_play>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/sound_play.vhd".
+    Found 8x26-bit ROM for signal <duration>.
+    Found 8x19-bit ROM for signal <pitch>.
+    Found 26-bit comparator equal for signal <change_note$cmp_eq0000> created at line 84.
+    Found 26-bit register for signal <d_counter>.
+    Found 26-bit adder for signal <d_counter_next$addsub0000> created at line 86.
+    Found 26-bit comparator less for signal <d_counter_next$cmp_lt0000> created at line 86.
+    Found 9-bit register for signal <note>.
+    Found 2-bit up counter for signal <note_addr>.
+    Found 1-bit register for signal <source>.
+    Found 1-bit register for signal <state<0>>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   1 Counter(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <sound_play> synthesized.
+
+
+Synthesizing Unit <pong_top>.
+    Related source file is "C:/Users/facun/OneDrive/Proyecyo_Tecnicas/Xiling/Pong_FSM/Pong_FSM/pong_top.vhd".
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | newgame                                        |
+    | Power Up State     | newgame                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit register for signal <ball_reg>.
+    Found 2-bit subtractor for signal <ball_reg$share0000> created at line 183.
+    Found 3-bit register for signal <rgb_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <pong_top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 11
+ 128x7-bit ROM                                         : 1
+ 16x16-bit ROM                                         : 1
+ 16x7-bit ROM                                          : 3
+ 2048x8-bit ROM                                        : 1
+ 4x4-bit ROM                                           : 1
+ 4x9-bit ROM                                           : 2
+ 8x19-bit ROM                                          : 1
+ 8x26-bit ROM                                          : 1
+# Adders/Subtractors                                   : 17
+ 11-bit adder                                          : 5
+ 11-bit addsub                                         : 1
+ 11-bit subtractor                                     : 3
+ 19-bit adder                                          : 1
+ 2-bit subtractor                                      : 1
+ 26-bit adder                                          : 1
+ 4-bit adder                                           : 3
+ 4-bit subtractor                                      : 2
+# Counters                                             : 5
+ 11-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 8-bit down counter                                    : 1
+# Registers                                            : 22
+ 1-bit register                                        : 5
+ 11-bit register                                       : 6
+ 19-bit register                                       : 1
+ 2-bit register                                        : 1
+ 26-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+ 7-bit register                                        : 3
+ 9-bit register                                        : 1
+# Comparators                                          : 43
+ 11-bit comparator greatequal                          : 8
+ 11-bit comparator greater                             : 5
+ 11-bit comparator less                                : 5
+ 11-bit comparator lessequal                           : 16
+ 19-bit comparator equal                               : 1
+ 19-bit comparator less                                : 1
+ 26-bit comparator equal                               : 1
+ 26-bit comparator less                                : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator lessequal                            : 1
+ 6-bit comparator greatequal                           : 1
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator less                                 : 1
+# Multiplexers                                         : 3
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 7-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 19-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state_reg/FSM> on signal <state_reg[1:2]> with sequential encoding.
+---------------------
+ State   | Encoding
+---------------------
+ newgame | 00
+ play    | 01
+ newball | 11
+ over    | 10
+---------------------
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <delta_x_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <delta_y_reg>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <char_ROM>.
+INFO:Xst:3044 - The ROM <Mrom_data_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <addr_reg>.
+INFO:Xst:3225 - The RAM <Mrom_data_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <char_ROM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 1
+ 2048x8-bit single-port block RAM                      : 1
+# ROMs                                                 : 10
+ 128x7-bit ROM                                         : 1
+ 16x16-bit ROM                                         : 1
+ 16x7-bit ROM                                          : 3
+ 4x4-bit ROM                                           : 1
+ 4x9-bit ROM                                           : 2
+ 8x19-bit ROM                                          : 1
+ 8x26-bit ROM                                          : 1
+# Adders/Subtractors                                   : 17
+ 11-bit adder                                          : 5
+ 11-bit addsub                                         : 1
+ 11-bit subtractor                                     : 3
+ 19-bit adder                                          : 1
+ 2-bit subtractor                                      : 1
+ 26-bit adder                                          : 1
+ 4-bit adder                                           : 3
+ 4-bit subtractor                                      : 2
+# Counters                                             : 5
+ 11-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 8-bit down counter                                    : 1
+# Registers                                            : 152
+ Flip-Flops                                            : 152
+# Comparators                                          : 43
+ 11-bit comparator greatequal                          : 8
+ 11-bit comparator greater                             : 5
+ 11-bit comparator less                                : 5
+ 11-bit comparator lessequal                           : 16
+ 19-bit comparator equal                               : 1
+ 19-bit comparator less                                : 1
+ 26-bit comparator equal                               : 1
+ 26-bit comparator less                                : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator lessequal                            : 1
+ 6-bit comparator greatequal                           : 1
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator less                                 : 1
+# Multiplexers                                         : 3
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 7-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 19-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_6> is equivalent to the following 8 FFs/Latches, which will be removed : <5> <3> <4> <8> <6> <7> <9> <10> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_3> is equivalent to the following 8 FFs/Latches, which will be removed : <5> <3> <4> <8> <6> <7> <9> <10> 
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <note_2> (without init value) has a constant value of 0 in block <sound_play>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <note_4> (without init value) has a constant value of 0 in block <sound_play>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <note_5> (without init value) has a constant value of 0 in block <sound_play>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <pong_top> ...
+
+Optimizing unit <vga_driver> ...
+
+Optimizing unit <m1000_counter> ...
+
+Optimizing unit <sseg_mux> ...
+
+Optimizing unit <sound_gen> ...
+
+Optimizing unit <pong_graph> ...
+
+Optimizing unit <pong_text> ...
+
+Optimizing unit <sound_play> ...
+INFO:Xst:2261 - The FF/Latch <note_1> in Unit <sound_play> is equivalent to the following FF/Latch, which will be removed : <note_6> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pong_top, actual ratio is 54.
+FlipFlop sound_unit/note_1 has been replicated 1 time(s)
+FlipFlop sound_unit/note_7 has been replicated 1 time(s)
+FlipFlop sound_unit/note_8 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 185
+ Flip-Flops                                            : 185
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : pong_top.ngr
+Top Level Output File Name         : pong_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 1464
+#      GND                         : 1
+#      INV                         : 43
+#      LUT1                        : 107
+#      LUT2                        : 214
+#      LUT2_D                      : 5
+#      LUT2_L                      : 1
+#      LUT3                        : 147
+#      LUT3_D                      : 4
+#      LUT3_L                      : 6
+#      LUT4                        : 310
+#      LUT4_D                      : 12
+#      LUT4_L                      : 22
+#      MUXCY                       : 357
+#      MUXF5                       : 52
+#      MUXF6                       : 16
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 159
+# FlipFlops/Latches                : 185
+#      FDC                         : 81
+#      FDC_1                       : 19
+#      FDCE                        : 75
+#      FDPE                        : 10
+# RAMS                             : 1
+#      RAMB16_S9                   : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 3
+#      OBUF                        : 22
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                      470  out of    960    48%  
+ Number of Slice Flip Flops:            185  out of   1920     9%  
+ Number of 4 input LUTs:                871  out of   1920    45%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    108    24%  
+ Number of BRAMs:                         1  out of      4    25%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 186   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 185   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 12.314ns (Maximum Frequency: 81.211MHz)
+   Minimum input arrival time before clock: 5.611ns
+   Maximum output required time after clock: 9.479ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.314ns (frequency: 81.211MHz)
+  Total number of paths / destination ports: 87235 / 280
+-------------------------------------------------------------------------
+Delay:               6.157ns (Levels of Logic = 13)
+  Source:            sound_unit/note_8_1 (FF)
+  Destination:       sound_unit/sounds/counter_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk falling
+
+  Data Path: sound_unit/note_8_1 to sound_unit/sounds/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.514   0.945  sound_unit/note_8_1 (sound_unit/note_8_1)
+     LUT3:I0->O            1   0.612   0.387  sound_unit/Mrom_pitch111 (sound_unit/Mrom_pitch1)
+     LUT4:I2->O            1   0.612   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_lut<0> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<0> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<1> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<2> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<3> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<4> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<5> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<6> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<7> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<8> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<8>)
+     MUXCY:CI->O          19   0.400   0.991  sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<9> (sound_unit/sounds/Mcompar_counter_next_cmp_eq0000_cy<9>)
+     LUT2:I1->O            1   0.612   0.000  sound_unit/sounds/counter_next<9>1 (sound_unit/sounds/counter_next<9>)
+     FDC_1:D                   0.268          sound_unit/sounds/counter_9
+    ----------------------------------------
+    Total                      6.157ns (3.834ns logic, 2.323ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 109 / 26
+-------------------------------------------------------------------------
+Offset:              5.611ns (Levels of Logic = 14)
+  Source:            btn<1> (PAD)
+  Destination:       pong_graph_unit/paddle_x_reg_10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<1> to pong_graph_unit/paddle_x_reg_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.106   1.016  btn_1_IBUF (btn_1_IBUF)
+     LUT2:I0->O            1   0.612   0.357  pong_graph_unit/paddle_x_reg_mux00012 (pong_graph_unit/paddle_x_reg_mux0001)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<0> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<1> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<2> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<3> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<4> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<5> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<6> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<7> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<8> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<8>)
+     MUXCY:CI->O           0   0.052   0.000  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<9> (pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_cy<9>)
+     XORCY:CI->O           1   0.699   0.426  pong_graph_unit/Maddsub_paddle_x_reg_addsub0000_xor<10> (pong_graph_unit/paddle_x_reg_addsub0000<10>)
+     LUT2:I1->O            1   0.612   0.000  pong_graph_unit/paddle_x_reg_mux0000<0>1 (pong_graph_unit/paddle_x_reg_mux0000<0>)
+     FDCE:D                    0.268          pong_graph_unit/paddle_x_reg_10
+    ----------------------------------------
+    Total                      5.611ns (3.812ns logic, 1.799ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 329 / 21
+-------------------------------------------------------------------------
+Offset:              9.479ns (Levels of Logic = 23)
+  Source:            sound_unit/note_1 (FF)
+  Destination:       buzzer (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sound_unit/note_1 to buzzer
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             21   0.514   1.111  sound_unit/note_1 (sound_unit/note_1)
+     LUT2:I0->O            1   0.612   0.387  sound_unit/sounds/Sh19_SW2 (N146)
+     LUT4:I2->O            1   0.612   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_lut<0> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<0> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<1> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<2> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<3> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<4> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<5> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<6> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<7> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<8> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<9> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<10> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<11> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<12> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<13> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<14> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<15> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<16> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<17> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<17>)
+     MUXCY:CI->O           1   0.399   0.426  sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<18> (sound_unit/sounds/Mcompar_buzzer_cmp_lt0000_cy<18>)
+     LUT2:I1->O            1   0.612   0.357  sound_unit/sounds/buzzer_and00001 (buzzer_OBUF)
+     OBUF:I->O                 3.169          buzzer_OBUF (buzzer)
+    ----------------------------------------
+    Total                      9.479ns (7.198ns logic, 2.281ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.92 secs
+ 
+--> 
+
+Total memory usage is 279764 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+
